@@ -76,7 +76,7 @@ export default function Contact() {
               >
                 📞
               </motion.span>
-              <span className="text-white font-black text-lg tracking-wide">LET'S MAKE HISTORY TOGETHER</span>
+              <span className="text-white font-black text-lg tracking-wide">LET&apos;S MAKE HISTORY TOGETHER</span>
             </motion.div>
           </motion.div>
 

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 
 
 
@@ -61,10 +62,12 @@ export default function Navbar() {
               transition={{ duration: 0.2 }}
             >
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-green-600 p-1 shadow-lg group-hover:shadow-emerald-500/25 transition-shadow duration-300">
-                <img
+                <Image
                   src="/smalllogo.jpeg"
                   alt="Pioneer Sports Logo"
-                  className="w-full h-full rounded-lg object-contain bg-white"
+                  width={48}
+                  height={48}
+                  className="rounded-lg object-contain bg-white"
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-green-600 rounded-xl opacity-0 group-hover:opacity-20 blur-lg transition-opacity duration-300" />

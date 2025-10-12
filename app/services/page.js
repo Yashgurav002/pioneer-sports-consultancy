@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Services() {
   const services = [
@@ -245,10 +246,12 @@ export default function Services() {
                   transition={{ duration: 0.2 }}
                 >
                   <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-emerald-500/25 transition-shadow duration-300">
-                    <img
+                    <Image
                       src={service.icon}
                       alt={`${service.title} Icon`}
-                      className="w-10 h-10 object-contain filter brightness-0 invert"
+                      width={40}
+                      height={40}
+                      className="object-contain filter brightness-0 invert"
                     />
                   </div>
                 </motion.div>

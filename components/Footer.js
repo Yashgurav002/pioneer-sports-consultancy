@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -56,10 +57,12 @@ export default function Footer() {
               transition={{ duration: 0.6 }}
             >
               <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-600 rounded-xl p-1 shadow-lg">
-                <img
+                <Image
                   src="/smalllogo.jpeg"
                   alt="Pioneer Sports Logo"
-                  className="w-full h-full object-contain rounded-lg bg-white"
+                  width={48}
+                  height={48}
+                  className="object-contain rounded-lg bg-white"
                 />
               </div>
               <div>
