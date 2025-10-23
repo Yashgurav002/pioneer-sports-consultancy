@@ -5,6 +5,7 @@ import Card from "../components/Card";
 import Button from "../components/Button";
 import { motion } from "framer-motion";
 import Link from "next/link";
+    import { Trophy, Globe, Sprout } from "lucide-react";
 
 export default function Home() {
   const heroButtons = [
@@ -22,44 +23,70 @@ export default function Home() {
     },
   ];
 
-  const features = [
-    {
-      title: "World-Class Training",
-      description:
-        "European methodology adapted for Indian players with professional coaching standards.",
-      icon: "🏆",
-      features: [
+
+
+const features = [
+  { title: "World-Class Training", icon: <Trophy size={40} />, description:
+        "European methodology adapted for Indian players with professional coaching standards.", features: [
         "Professional Coaches",
         "European Methods",
         "Performance Analysis",
         "Individual Development",
-      ],
-    },
-    {
-      title: "Global Opportunities",
-      description:
-        "Direct connections with European clubs, scouts, and international football networks.",
-      icon: "🌍",
-      features: [
-        "European Trials",
-        "Scout Networks",
-        "Club Partnerships",
-        "Career Guidance",
-      ],
-    },
-    {
-      title: "Grassroots Focus",
-      description:
-        "Building strong foundations at community level across India with comprehensive support.",
-      icon: "🌱",
-      features: [
-        "Community Programs",
-        "Youth Development",
-        "Equipment Support",
-        "Local Partnerships",
-      ],
-    },
-  ];
+      ],},
+  { title: "Global Opportunities", icon: <Globe size={40} />, description:
+        "European methodology adapted for Indian players with professional coaching standards.", features: [
+        "Professional Coaches",
+        "European Methods",
+        "Performance Analysis",
+        "Individual Development",
+      ],},
+  { title: "Grassroots Focus", icon: <Sprout size={40} />, description:
+        "European methodology adapted for Indian players with professional coaching standards.", features: [
+        "Professional Coaches",
+        "European Methods",
+        "Performance Analysis",
+        "Individual Development",
+      ],},
+];
+
+  // const features = [
+  //   {
+  //     title: "World-Class Training",
+  //     description:
+  //       "European methodology adapted for Indian players with professional coaching standards.",
+  //     icon: "🏆",
+  //     features: [
+  //       "Professional Coaches",
+  //       "European Methods",
+  //       "Performance Analysis",
+  //       "Individual Development",
+  //     ],
+  //   },
+  //   {
+  //     title: "Global Opportunities",
+  //     description:
+  //       "Direct connections with European clubs, scouts, and international football networks.",
+  //     icon: "🌍",
+  //     features: [
+  //       "European Trials",
+  //       "Scout Networks",
+  //       "Club Partnerships",
+  //       "Career Guidance",
+  //     ],
+  //   },
+  //   {
+  //     title: "Grassroots Focus",
+  //     description:
+  //       "Building strong foundations at community level across India with comprehensive support.",
+  //     icon: "🌱",
+  //     features: [
+  //       "Community Programs",
+  //       "Youth Development",
+  //       "Equipment Support",
+  //       "Local Partnerships",
+  //     ],
+  //   },
+  // ];
 
   const testimonials = [
     {

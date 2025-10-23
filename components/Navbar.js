@@ -133,12 +133,12 @@ export default function Navbar() {
                 />
                 
                 <span className="relative z-10 flex items-center gap-2">
-                  <motion.span
+                  {/* <motion.span
                     animate={{ rotate: [0, 360] }}
                     transition={{ duration: 2, repeat: Infinity }}
                   >
                     🚀
-                  </motion.span>
+                  </motion.span> */}
                   GET STARTED
                 </span>
               </motion.button>

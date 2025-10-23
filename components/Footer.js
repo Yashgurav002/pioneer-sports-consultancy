@@ -30,7 +30,7 @@ export default function Footer() {
       title: 'Contact Info',
       links: [
         { name: 'Mumbai, Maharashtra, India', href: '#', icon: 'location' },
-        { name: '+91 98765 43210', href: 'tel:+919876543210', icon: 'phone' },
+        { name: '+91 7028981188', href: 'tel:+917028981188', icon: 'phone' },
         { name: 'yashgurav002@gmail.com', href: 'mailto:yashgurav002@gmail.com', icon: 'email' },
       ]
     }

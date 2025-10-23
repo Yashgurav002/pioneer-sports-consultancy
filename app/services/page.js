@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function Services() {
+
+
   const services = [
     {
       title: "Training Camps",

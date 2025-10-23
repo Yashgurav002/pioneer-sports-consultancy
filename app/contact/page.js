@@ -5,9 +5,9 @@ import { motion } from 'framer-motion'
 
 export default function Contact() {
   return (
-    <div className="pt-20">
+    <div className="">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-emerald-600 via-amber-500 to-yellow-500 text-white py-32 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-emerald-600 via-amber-500 to-yellow-500 text-white py-24 relative overflow-hidden">
         {/* Dynamic Background */}
         <div className="absolute inset-0">
           <motion.div
@@ -26,7 +26,7 @@ export default function Contact() {
           {[...Array(5)].map((_, i) => (
             <motion.div
               key={i}
-              className="absolute w-16 h-16 rounded-full opacity-30"
+              className="absolute w-16 h-14 rounded-full opacity-30"
               style={{
                 background: `radial-gradient(circle, rgba(255,255,255,0.4) 0%, transparent 70%)`,
                 left: `${15 + i * 18}%`,
@@ -121,7 +121,7 @@ export default function Contact() {
           </motion.p>
 
           {/* Contact Methods Preview */}
-          <motion.div 
+          {/* <motion.div 
             className="grid grid-cols-2 md:grid-cols-4 gap-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -162,7 +162,7 @@ export default function Contact() {
                 </div>
               </motion.div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 
