@@ -224,7 +224,7 @@ export default function ContactForm() {
                 Sending...
               </>
             ) : (
-              '⚽ Send Message'
+              'Send Message'
             )}
           </Button>
         </motion.div>

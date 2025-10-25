@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 "use client";
 
 import { motion } from "framer-motion";
@@ -119,7 +121,7 @@ export default function Services() {
                 boxShadow: { duration: 2, repeat: Infinity }
               }}
             >
-              <motion.span 
+              {/* <motion.span 
                 className="text-white font-black text-lg tracking-wide mr-3"
                 animate={{ 
                   rotate: [0, 360],
@@ -127,7 +129,7 @@ export default function Services() {
                 transition={{ duration: 3, repeat: Infinity }}
               >
                 🏆
-              </motion.span>
+              </motion.span> */}
               <span className="text-white font-black text-lg tracking-wide">ELITE TRAINING PROGRAMS</span>
             </motion.div>
           </motion.div>
@@ -363,7 +365,7 @@ export default function Services() {
               whileTap={{ scale: 0.95 }}
               onClick={() => (window.location.href = "/contact")}
             >
-              <span>⚽</span>
+              {/* <span>⚽</span> */}
               Get Started Today
             </motion.button>
 
@@ -373,7 +375,7 @@ export default function Services() {
               whileTap={{ scale: 0.95 }}
               onClick={() => (window.location.href = "/about")}
             >
-              <span>📖</span>
+              {/* <span>📖</span> */}
               Learn More
             </motion.button>
           </motion.div>

@@ -68,7 +68,7 @@ export default function Contact() {
                 boxShadow: { duration: 2, repeat: Infinity }
               }}
             >
-              <motion.span 
+              {/* <motion.span 
                 className="text-white font-black text-lg tracking-wide mr-3"
                 animate={{ 
                   rotate: [0, 15, -15, 0],
@@ -77,7 +77,7 @@ export default function Contact() {
                 transition={{ duration: 2, repeat: Infinity }}
               >
                 📞
-              </motion.span>
+              </motion.span> */}
               <span className="text-white font-black text-lg tracking-wide">LET&apos;S MAKE HISTORY TOGETHER</span>
             </motion.div>
           </motion.div>

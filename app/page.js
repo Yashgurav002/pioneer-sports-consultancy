@@ -12,13 +12,13 @@ import Link from "next/link";
 export default function Home() {
   const heroButtons = [
     {
-      text: "🚀 START YOUR JOURNEY",
+      text: "START YOUR JOURNEY",
       action: "scroll",
       target: "contact",
       variant: "primary",
     },
     {
-      text: "⚡ EXPLORE PROGRAMS",
+      text: "EXPLORE PROGRAMS",
       action: "navigate",
       target: "/services",
       variant: "outline",
@@ -205,7 +205,7 @@ const features = [
       </motion.section>
 
       {/* Stats Section */}
-      <motion.section
+      {/* <motion.section
         className="py-24 px-4 bg-gradient-to-br from-gray-900 via-emerald-900 to-amber-900 text-white relative overflow-hidden"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -249,10 +249,42 @@ const features = [
             ))}
           </div>
         </div>
-      </motion.section>
+      </motion.section> */}
 
+
+     <motion.section className="py-32 px-4 bg-gradient-to-br from-amber-500 via-yellow-500 to-emerald-600 text-center relative overflow-hidden">
+        <div className="max-w-6xl mx-auto relative z-10">
+          <h2 className="text-7xl md:text-9xl font-display font-black text-white mb-8 leading-none">
+            READY TO DOMINATE?
+          </h2>
+          <p className="text-2xl md:text-3xl text-white/90 mb-16 font-bold max-w-5xl mx-auto">
+            Join hundreds of players who have transformed their football dreams
+            into reality.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+            <Link href="/contact">
+              <Button
+                variant="primary"
+                size="large"
+                className="px-16 py-6 text-2xl"
+              >
+                START YOUR JOURNEY
+              </Button>
+            </Link>
+            <Link href="/services">
+              <Button
+                variant="ghost"
+                size="large"
+                className="px-16 py-6 text-2xl"
+              >
+                EXPLORE PROGRAMS
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </motion.section>
       {/* Testimonials Section */}
-      <motion.section className="py-20 px-4 bg-white">
+      {/* <motion.section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <motion.div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6">
@@ -285,40 +317,10 @@ const features = [
             ))}
           </div>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* CTA Section */}
-      <motion.section className="py-32 px-4 bg-gradient-to-br from-amber-500 via-yellow-500 to-emerald-600 text-center relative overflow-hidden">
-        <div className="max-w-6xl mx-auto relative z-10">
-          <h2 className="text-7xl md:text-9xl font-display font-black text-white mb-8 leading-none">
-            READY TO DOMINATE?
-          </h2>
-          <p className="text-2xl md:text-3xl text-white/90 mb-16 font-bold max-w-5xl mx-auto">
-            Join hundreds of players who have transformed their football dreams
-            into reality.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
-            <Link href="/contact">
-              <Button
-                variant="primary"
-                size="large"
-                className="px-16 py-6 text-2xl"
-              >
-                START YOUR JOURNEY
-              </Button>
-            </Link>
-            <Link href="/services">
-              <Button
-                variant="ghost"
-                size="large"
-                className="px-16 py-6 text-2xl"
-              >
-                EXPLORE PROGRAMS
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </motion.section>
+     
     </>
   );
 }

@@ -4,6 +4,8 @@
 
 import { motion } from 'framer-motion'
 import Card from '../../components/Card'
+import { Target, Users, Globe, Award, BookOpen, TrendingUp } from "lucide-react";
+
 
 export default function About() {
   const collaborations = [
@@ -78,13 +80,13 @@ export default function About() {
                 boxShadow: { duration: 2, repeat: Infinity }
               }}
             >
-              <motion.span 
+              {/* <motion.span 
                 className="text-white font-black text-lg tracking-wide mr-3"
                 animate={{ rotate: [0, 10, -10, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
               >
                 🏆
-              </motion.span>
+              </motion.span> */}
               <span className="text-white font-black text-lg tracking-wide">OUR LEGENDARY STORY</span>
             </motion.div>
           </motion.div>
@@ -137,7 +139,7 @@ export default function About() {
             transition={{ duration: 1, delay: 0.8 }}
           >
             {[
-              { number: '2019', label: 'Founded', icon: '🚀' },
+              { number: '2025', label: 'Founded', icon: '🚀' },
               { number: '100%', label: 'Success Rate', icon: '🎯' },
               { number: '24/7', label: 'Support', icon: '💪' },
               { number: '∞', label: 'Possibilities', icon: '⭐' }
@@ -345,7 +347,7 @@ export default function About() {
                 />
                 
                 <h4 className="text-xl font-display font-bold text-amber-300 mb-3 flex items-center gap-2">
-                  <span>💭</span>
+                  {/* <span>💭</span> */}
                   Founder's Vision
                 </h4>
                 <blockquote className="text-base text-white/90 leading-relaxed italic mb-4">
@@ -363,7 +365,7 @@ export default function About() {
                 transition={{ duration: 0.3 }}
               >
                 <h4 className="text-xl font-display font-bold text-emerald-300 mb-3 flex items-center gap-2">
-                  <span>🎓</span>
+                  {/* <span>🎓</span> */}
                   World-Class Education
                 </h4>
                 <p className="text-base text-white/90 leading-relaxed mb-4">
@@ -372,7 +374,7 @@ export default function About() {
                 
                 <div className="bg-black/20 rounded-lg p-4 border border-amber-400/30">
                   <h5 className="text-lg font-bold text-amber-300 mb-2 flex items-center gap-2">
-                    <span>⚽</span>
+                    {/* <span>⚽</span> */}
                     Spanish Methodology Expert
                   </h5>
                   <p className="text-white/90 text-sm leading-relaxed">
@@ -423,7 +425,7 @@ export default function About() {
               className="inline-block px-6 py-3 bg-gradient-to-r from-amber-500/20 to-emerald-500/20 backdrop-blur-sm rounded-full border border-amber-400/30 text-amber-700 font-bold text-sm tracking-wide mb-8"
               whileHover={{ scale: 1.05 }}
             >
-              📖 OUR JOURNEY
+              OUR JOURNEY
             </motion.span>
             
             <motion.h2 
@@ -494,41 +496,40 @@ export default function About() {
       </section>
 
       {/* Collaborations */}
-      <section className="py-24 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
+      {/* <section className="py-20 bg-gradient-to-br from-gray-900 via-primary-dark to-gray-900 text-white">
+        <div className="container mx-auto px-4">
           <motion.div
-            className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center"
           >
-            <h2 className="text-5xl font-display font-bold text-gray-900 mb-6">
-              Our Global <span className="gradient-text bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">Partnerships</span>
+            <h2 className="font-display font-bold text-4xl md:text-5xl mb-6">
+              Strategic Collaborations
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Collaborating with football legends and international organizations to bring world-class expertise to India
+            <p className="text-xl mb-12 text-white/80 max-w-3xl mx-auto">
+              Partnering with football legends to bring world-class expertise to India
             </p>
+
+            <div className="max-w-3xl mx-auto bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20">
+              <div className="flex items-center gap-4 mb-6">
+                <Award className="w-12 h-12 text-secondary flex-shrink-0" />
+                <div className="text-left">
+                  <h3 className="font-display font-bold text-2xl mb-1">Paulo Futre</h3>
+                  <p className="text-white/80">Portuguese Football Legend</p>
+                </div>
+              </div>
+              <p className="text-left text-white/90 leading-relaxed">
+                Our collaboration with Paulo Futre, one of Portugal's greatest footballers, brings 
+                decades of elite-level experience and international connections to Pioneer Sports. 
+                This partnership opens doors to European clubs, scouts, and training methodologies 
+                used by the best in the world.
+              </p>
+            </div>
           </motion.div>
-          
-          <div className="grid md:grid-cols-3 gap-10">
-            {collaborations.map((collab, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-              >
-                <Card
-                  title={collab.title}
-                  description={collab.description}
-                  icon={collab.icon}
-                  variant="featured"
-                />
-              </motion.div>
-            ))}
-          </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }
